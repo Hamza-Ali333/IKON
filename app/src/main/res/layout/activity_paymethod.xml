@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".paymethod">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:paddingLeft="12dp"
+        android:background="@drawable/whiteround"
+        app:layout_constraintEnd_toStartOf="@+id/guideline18"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toTopOf="@+id/guideline20">
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PayPal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/r1"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:paddingLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/whiteround"
+        app:layout_constraintEnd_toStartOf="@+id/guideline18"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toBottomOf="@+id/layout1">
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PayU Money"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/r2"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:paddingLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/whiteround"
+        app:layout_constraintEnd_toStartOf="@+id/guideline18"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toBottomOf="@+id/layout2">
+        <RadioButton
+            android:id="@+id/r3"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Transfer"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/r3"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:paddingLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/whiteround"
+        app:layout_constraintEnd_toStartOf="@+id/guideline18"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toBottomOf="@+id/layout3">
+        <RadioButton
+            android:id="@+id/r4"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay on spot"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/r4"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bottom_round"
+        android:text="Pay Now $267.80"
+        android:textAllCaps="false"
+        android:textColor="#FFf"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

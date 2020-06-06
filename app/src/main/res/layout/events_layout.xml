@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#151618">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/viewall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/whiteround"
+        android:drawableStart="@drawable/ic_location_on_black_24dp"
+        android:drawableEnd="@drawable/ic_right_aero"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="View all events around you"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/foryou" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/viewall"
+            app:srcCompat="@drawable/dj_party_image" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayou5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/whitebottonround"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ic_location_on_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="2020, Marion St. Bass Hill, Amsterdam"
+            android:textColor="#0C0C0C"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3"
+            android:text="28th March | 22:22 - -4:22 987 People Attending"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="DJs"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            tools:text="DJs" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/textView9"
+            app:srcCompat="@drawable/ic_add_circle"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageView6"
+            app:srcCompat="@drawable/ic_add_circle"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageView7"
+            app:srcCompat="@drawable/ic_add_circle"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageView8"
+            app:srcCompat="@drawable/ic_add_circle"
+            tools:ignore="VectorDrawableCompat" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_alignParentRight="true"
+            android:text="$130.00"
+            android:textColor="#0067FA"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/foryou"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="For You"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/popular"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <TextView
+        android:id="@+id/popular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Popular"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/foryou"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="0dp"
+            android:layout_height="280dp"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayou5"
+            app:srcCompat="@drawable/dj_party_image" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebottonround"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ic_location_on_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/imageView12"
+                android:text="2020, Marion St. Bass Hill, Amsterdam"
+                android:textColor="#0C0C0C"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView13"
+                android:layout_alignLeft="@+id/textView13"
+                android:text="28th March | 22:22 - -4:22 987 People Attending"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/logo1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/imageView12"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/logo1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/imageView12"
+                android:text="DJs"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                tools:text="DJs" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/logo1"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/textView19"
+                app:srcCompat="@drawable/ic_add_circle"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/logo1"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageView16"
+                app:srcCompat="@drawable/ic_add_circle"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/logo1"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageView17"
+                app:srcCompat="@drawable/ic_add_circle"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/logo1"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageView18"
+                app:srcCompat="@drawable/ic_add_circle"
+                tools:ignore="VectorDrawableCompat" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/logo1"
+                android:layout_alignParentRight="true"
+                android:text="$130.00"
+                android:textColor="#0067FA"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="0dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout5"
+            app:srcCompat="@drawable/dj_party_image"
+            android:background="@drawable/circle"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/whitebottonround"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView23">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ic_location_on_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/imageView2"
+                android:text="2020, Marion St. Bass Hill, Amsterdam"
+                android:textColor="#0C0C0C"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView23"
+                android:layout_alignLeft="@+id/textView23"
+                android:text="28th March | 22:22 - -4:22 987 People Attending"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/logo2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/imageView2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/logo2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/imageView2"
+                android:text="DJs"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                tools:text="DJs" />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/logo2"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/textView29"
+                app:srcCompat="@drawable/ic_add_circle"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/logo2"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageView26"
+                app:srcCompat="@drawable/ic_add_circle"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/logo2"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageView27"
+                app:srcCompat="@drawable/ic_add_circle"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/logo2"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageView28"
+                app:srcCompat="@drawable/ic_add_circle"
+                tools:ignore="VectorDrawableCompat" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/logo2"
+                android:layout_alignParentRight="true"
+                android:text="$130.00"
+                android:textColor="#0067FA"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

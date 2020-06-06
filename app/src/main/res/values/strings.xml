@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_header_desc">Dj IKON</string>
+    <string name="nav_header_title">userapp</string>
+    <string name="nav_header_subtitle">userapplication</string>
+    <string name="menu_home">Events</string>
+    <string name="menu_events">My Dj</string>
+    <string name="menu_slideshow">Tickets</string>
+    <string name="action_settings">setting</string>
+    <string name="home_second">secondFragmet</string>
+</resources>
